@@ -1,0 +1,17 @@
+.majicImg {
+  margin: 10px; 
+  width: 220px;
+  height: 300px;
+
+  
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+
+.push{
+  padding-top: 20px;
+  padding-bottom: 20px; 
+}
