@@ -130,7 +130,7 @@ $('.search').click(function () {
 
             for (var i = 0; i < response.data.children.length; i++) {
                 var img = response.data.children[i].data.thumbnail;
-                var defaultImg = "default.jpg"
+                var defaultImg = "default1.png"
 
                 if (img.length < 10) {
                     img = "<img  class='majicImg' src='" + defaultImg + "'/>";
@@ -146,4 +146,3 @@ $('.search').click(function () {
         }
     });
 });
-
