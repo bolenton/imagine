@@ -1,5 +1,3 @@
-
-
 $('.search').click(function () {
     $(".main-body").empty();
     $('.search').addClass('is-loading');
@@ -16,18 +14,17 @@ $('.search').click(function () {
 
                 var img = response.data.children[i].data.thumbnail;
                 var defaultImg = "default.jpg"
-                if (img.length < 10)
-                {
-                     img = "<img  class='majicImg' src='" + defaultImg + "'/>";
+                if (img.length < 10) {
+                    img = "<img  class='majicImg' src='" + defaultImg + "'/>";
                 }
-                else
-                {
+                else {
                     img = "<img  class='majicImg' src='" + response.data.children[i].data.thumbnail + "'/>";
                 }
-                $(".main-body").append(img);
                 
+                $(".main-body").append(img);
             }
-            $('.search').removeClass('is-loading');
+            
+            $('.search').removeClass('is-loading');        
         }
     });
 });
